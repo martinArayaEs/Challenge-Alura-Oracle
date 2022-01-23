@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio Oracle/Alura latam</title>
+</head>
+<body>
+    <h1 class="titulo_principal">Código Secreto</h1>
+    <section class="formularios">
+        <div class="form_encriptar">
+            <label for="input-texto"><h2>Ingrese el texto a encriptar</h2></label>
+            <textarea id="entrada_texto" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="Solo letras minusculas, sin acento ni caracteres especiales."></textarea>
+            <br>
+            <button class="boton_izquierdo" onclick="botonEncriptar()">Encriptar</button>
+            <button class="boton_derecho" onclick="botonDesencriptar()">Desencriptar</button>
+        </div>
+    
+        <div class="form-desencriptar">
+            <label for="output-texto"><h2 id="titulo-desencriptar">Mensaje encriptado/desencriptado</h2></label>
+            <textarea id="salida_texto" name="textarea" rows="10" cols="50" onchange="this.value=this.value.toLowerCase();" placeholder="Aqui esta su texto encriptado/desencriptado"></textarea>
+            <br>
+            <button class="boton_izquierdo" onclick="botonCopiar()">Copiar</button>
+           
+        </div>
+    </section>
+
+    <footer class="derechos">
+      <p>Trabajo realizado por Martin Araya | 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
